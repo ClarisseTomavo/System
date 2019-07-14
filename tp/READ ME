@@ -1,0 +1,60 @@
+
+Exercie1:
+
+Il s'agit d'ecrire un programme qui crée 3 processus fils et d'afficher le pid de chaque processus.
+
+Exercice2:
+
+1-La valeure finale est 101.
+
+2-Pour résoudre ce probleme, on doit 
+verrouiller la mémoire partagé si elle est en cours 
+d'exploitation par un processus. Et à la fin de son
+exécusion la mémoire sera dévérouillée.
+ 
+3-Implémentation de la session 
+
+Exercice3
+
+1-Les problèmes à résoudre sont:
+-La création d'une mémoire partagée qui doit être un tableau d'entiers
+-Faire entrer les elements de la matrice dans la mémoire.
+-Trouver une formule pour le calcul du carré d'une matrice.
+-Controler l'accès des processus à la mémoire partagée.
+
+2-Propositions de solutions aux différents problèmes identifiés.
+Pour la saisie des éléments d'une matrice dans la mémoire, elle sera faite à travers une 
+boucle for et stockée dans un fichier
+Ala fin de la saisie, la matrice s'affichera à l'écran et s'en suivra l'affichage de la matrice carré résultat de notre 
+traitement.
+Le calcul de la matrice carrée sera géré par des processus fils.
+Il y aura autant de processus fils que d'éléments dans la matrice
+
+3-Implementation:
+Le programme écrit dans un dossier nommé exercice3.
+
+
+Exercice4:
+
+1-Problèmes à résoudre:
+Connexion au serveur 
+Comment faire la copie d'un fichier du client vers le serveur.
+2-Pour régler le problème de copie de fichier, il faut que le programme client envoie d'abords le 
+nom du ficheir à copier au serveur qui va le créer en lecture écriture. Ensuite, le client va compter le nombre 
+de caracteres dans le fichier à copier et envoyer tout ces caracteres au serveur. Ensuite, celui ci va les 
+écire dans le fichier qu'il a créer. 
+3-Implémentation du programme.
+
+
+Exercice5
+
+1-Problemes à résoudre:
+La gestion d'envoie de message de façon périodique au serveur
+La gestion de l'ascès à la mémoire par les deux processus.
+2-Pour régler le problème de gestion d'envoie de message de façon périodique, on va utiliser un signal ALARM qui va se déclencher chaque 10 secondes pour demander
+au client d'envoyer une requete au serveur.
+3-Impléméntation :
+
+
+
+ 
